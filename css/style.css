@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Menu de navegación*/
+
+.navbar {
+	width: 100%;
+	background-color: #f8f8f8;
+	position: fixed;
+	top: 0px;
+}
+
+.navbar > .navbar-list {
+	font-size: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.navbar > .navbar-list > .navbar-item{
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar > .navbar-list > .navbar-item > .navbar-link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 18px;
+	color: #555555;
+	text-transform: uppercase;
+	transition: color 0.3s;
+
+
+}
+
+.navbar > .navbar-list > .navbar-item > .navbar-link:hover {
+	color: #1d89cc;
+}
+
+/*Fin menu de navegacion*/
+
+/*Header*/
+
+.cabecera > .imagen-cabecera {
+	background-image: url(../img/fondo-header.jpg);
+	height: 100vh;
+}
+
+.cabecera > .titulo-cabecera {
+	font-family: 'Oxygen', sans-serif;
+	position: absolute;
+	top: 150px;
+	color: #FFF;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+
+}
+
+.cabecera > .texto-cabecera {
+	position: absolute;
+	top: 240px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+/*iconos sociales header*/
+
+.cabecera > .social-icons-list {
+	position: absolute;
+	top: 290px;
+	color: #FFF;
+	list-style-type: none;
+	font-size: 0px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.cabecera > .social-icons-list > .social-icons-items {
+	display: inline-block;
+}
+
+.cabecera > .social-icons-list > .social-icons-items > .social-icons-links {
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 50%;
+	border: 1px solid #FFF;
+	position: relative;
+}
+
+.cabecera > .social-icons-list > .social-icons-items > .social-icons-links  i{
+	line-height: 40px;
+	text-align: center;
+	transition: transform 0.5s ease-in-out;
+
+}
+
+.cabecera > .social-icons-list > .social-icons-items > .social-icons-links:hover  i{
+	line-height: 40px;
+	text-align: center;
+	transform: rotate(360deg);
+
+}
+
+.cabecera > .social-icons-list a.facebook-icon:hover{
+	background-color:#3B5998;
+}
+
+.cabecera > .social-icons-list a.linkedin-icon:hover{
+	background-color:#007bb7;
+}
+
+.cabecera > .social-icons-list a.pinterest-icon:hover{
+	background-color:#BD081C;
+}
+
+.cabecera > .social-icons-list a.email-icon:hover{
+	background-color:rgb(208, 149, 18);
+}
+
+
+
+
+
+
