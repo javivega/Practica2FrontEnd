@@ -161,6 +161,11 @@ body {
 	padding-bottom: 50px;
 }
 
+.section-content-reverse{
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}
+
 .linea-separadora {
 	width: 150px;
 	height: 2px;
@@ -182,4 +187,198 @@ h2 {
 	height: 300px;
 	margin: 0 auto;
 	overflow: hidden;
+	border: 3px solid black;
 }
+
+
+/************************/
+/*skills animation*/
+/************************/
+
+.my-skills{
+	background-color: #F7F7F7;
+
+}
+.skills-box{
+	width: 80%;
+    margin: 0;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 30px 0 30px
+}
+
+.skills-list {
+	list-style-type: none;
+	padding-top: 30px;
+}
+
+.skills-list li {
+	margin-bottom: 70px;
+	background-color: #000;
+	height: 6px;
+	border-radius: 3px;
+	border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.skills-list li em{
+	position: relative;
+	top: -30px;
+	font-size: 20px;
+	color: #1d89cc;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.skill-item {
+	height: 2px;
+	margin: 1px 0;
+	background-color: #1d89cc;
+	position: absolute;
+	box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.html5 {
+    width: 70%;
+	animation: html5 2s ease-out;
+    -moz-animation: html5 2s ease-out;
+    -webkit-animation: html5 2s ease-out;
+}
+
+@keyframes html5 {
+	0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+@-moz-keyframes html5 {
+    0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+@-webkit-keyframes html5 {
+   	0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+.css3 {
+    width: 70%;
+	animation: css3 2s ease-out;
+    -moz-animation: css3 2s ease-out;
+    -webkit-animation: css3 2s ease-out;
+}
+
+@keyframes css3{
+	0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+@-moz-keyframes css3 {
+    0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+@-webkit-keyframes css3 {
+   	0% {width: 0px;}
+	100% {width: 70%;};
+}
+
+.javascript {
+    width: 50%;
+	animation: javascript 2s ease-out;
+    -moz-animation: javascript 2s ease-out;
+    -webkit-animation: javascript 2s ease-out;
+}
+
+@keyframes javascript {
+	0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+@-moz-keyframes javascript {
+    0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+@-webkit-keyframes javascript {
+   	0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+.jquery {
+    width: 30%;
+	animation: jquery 2s ease-out;
+    -moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+
+@keyframes jquery {
+	0% {width: 0px;}
+	100% {width: 30%;};
+}
+
+@-moz-keyframes jquery {
+    0% {width: 0px;}
+	100% {width: 30%;};
+}
+
+@-webkit-keyframes jquery {
+   	0% {width: 0px;}
+	100% {width: 30%;};
+}
+
+.python {
+    width: 40%;
+	animation: python 2s ease-out;
+    -moz-animation: python 2s ease-out;
+    -webkit-animation: python 2s ease-out;
+}
+
+@keyframes python {
+	0% {width: 0px;}
+	100% {width: 40%;};
+}
+
+@-moz-keyframes python {
+    0% {width: 0px;}
+	100% {width: 40%;};
+}
+
+@-webkit-keyframes python {
+   	0% {width: 0px;}
+	100% {width: 40%;};
+}
+
+.vex {
+    width: 50%;
+	animation: vex 2s ease-out;
+    -moz-animation: vex 2s ease-out;
+    -webkit-animation: vex 2s ease-out;
+}
+
+@keyframes vex {
+	0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+@-moz-keyframes vex {
+    0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+@-webkit-keyframes vex {
+   	0% {width: 0px;}
+	100% {width: 50%;};
+}
+
+
+
+
+
+
+
+
+
