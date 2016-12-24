@@ -18,6 +18,7 @@ body {
 	background-color: #f8f8f8;
 	position: fixed;
 	top: 0px;
+	z-index: 999999;
 }
 
 .navbar > .navbar-list {
@@ -38,8 +39,10 @@ body {
 	color: #555555;
 	text-transform: uppercase;
 	transition: color 0.3s;
+}
 
-
+.navbar > .navbar-list > .navbar-item.active > .navbar-link {
+	color: #1d89cc;
 }
 
 .navbar > .navbar-list > .navbar-item > .navbar-link:hover {
@@ -192,7 +195,7 @@ h2 {
 
 
 /************************/
-/*skills animation*/
+/*skills section*/
 /************************/
 
 .my-skills{
@@ -201,12 +204,11 @@ h2 {
 }
 .skills-box{
 	width: 80%;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
-    float: left;
     font-size: 12px;
     line-height: 2em;
-    padding: 30px 0 30px
+    padding: 20px 0 20px 0;
 }
 
 .skills-list {
@@ -219,17 +221,14 @@ h2 {
 	background-color: #000;
 	height: 6px;
 	border-radius: 3px;
-	border-left: 1px solid #111;
-    border-top: 1px solid #111;
-    border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
+	border: 1px solid #111;
 }
 
 .skills-list li em{
 	position: relative;
 	top: -30px;
 	font-size: 20px;
-	color: #1d89cc;
+	color:
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -239,10 +238,14 @@ h2 {
 	margin: 1px 0;
 	background-color: #1d89cc;
 	position: absolute;
-	box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
+	box-shadow: 0px 0px 10px 1px rgba(29, 137, 204, 0.41);;
 }
 
-.html5 {
+/************************/
+/*skills animations*/
+/************************/
+
+.html5.animate {
     width: 70%;
 	animation: html5 2s ease-out;
     -moz-animation: html5 2s ease-out;
@@ -264,7 +267,7 @@ h2 {
 	100% {width: 70%;};
 }
 
-.css3 {
+.css3.animate {
     width: 70%;
 	animation: css3 2s ease-out;
     -moz-animation: css3 2s ease-out;
@@ -286,7 +289,7 @@ h2 {
 	100% {width: 70%;};
 }
 
-.javascript {
+.javascript.animate {
     width: 50%;
 	animation: javascript 2s ease-out;
     -moz-animation: javascript 2s ease-out;
@@ -308,7 +311,7 @@ h2 {
 	100% {width: 50%;};
 }
 
-.jquery {
+.jquery.animate {
     width: 30%;
 	animation: jquery 2s ease-out;
     -moz-animation: jquery 2s ease-out;
@@ -330,7 +333,7 @@ h2 {
 	100% {width: 30%;};
 }
 
-.python {
+.python.animate {
     width: 40%;
 	animation: python 2s ease-out;
     -moz-animation: python 2s ease-out;
@@ -352,7 +355,7 @@ h2 {
 	100% {width: 40%;};
 }
 
-.vex {
+.vex.animate {
     width: 50%;
 	animation: vex 2s ease-out;
     -moz-animation: vex 2s ease-out;
@@ -374,6 +377,66 @@ h2 {
 	100% {width: 50%;};
 }
 
+
+
+/************************/
+/*Formulario*/
+/************************/
+
+
+.form {
+	margin: 0 auto;
+	width: 35%;
+	text-align: center;
+	background-color: #1d89cc;
+	border-radius: 3%;
+	box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75);
+}
+
+.form-row {
+	padding: 10px;
+}
+
+input {
+	border-radius: 5px;
+	padding: 10px 6px 10px 6px;
+	font-size: 16px;
+	margin-top: 10px;
+	background-color: #ebebeb;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+	border: solid 1px #007bb7;
+
+}
+
+label {
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.icon {
+	display: inline-block;
+	width: 30px;
+	background-color: #F7F7F7;
+	padding: 8px;
+	border-radius: 4px;
+	color: #1d89cc;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+	border: 1px solid #007bb7;
+	width: 40px;
+
+}
+
+textarea{
+	border-radius: 5px;
+	padding: 6px;
+	font-size: 16px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+	border: solid 1px #007bb7;
+
+}
 
 
 

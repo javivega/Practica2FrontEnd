@@ -17,20 +17,20 @@
 			<div class="imagen-cabecera"></div>
 			<p class="texto-cabecera">fullStak Web Developer</p>
 			<ul class="social-icons-list social-circulos">
-				<li class="social-icons-items"><a href="#" class="social-icons-links facebook-icon"><i class="fa fa-facebook"></i></a></li>
-				<li class="social-icons-items"><a href="#" class="social-icons-links linkedin-icon"><i class="fa fa-linkedin"></i></a></li>
-				<li class="social-icons-items"><a href="#" class="social-icons-links pinterest-icon"><i class="fa fa-pinterest"></i></a></li>
-				<li class="social-icons-items"><a href="#" class="social-icons-links email-icon"><i class="fa fa-envelope"></i></a></li>
+				<li class="social-icons-items"><a href="" class="social-icons-links facebook-icon"><i class="fa fa-facebook"></i></a></li>
+				<li class="social-icons-items"><a href="" class="social-icons-links linkedin-icon"><i class="fa fa-linkedin"></i></a></li>
+				<li class="social-icons-items"><a href="" class="social-icons-links pinterest-icon"><i class="fa fa-pinterest"></i></a></li>
+				<li class="social-icons-items"><a href="" class="social-icons-links email-icon"><i class="fa fa-envelope"></i></a></li>
 			</ul>
 		</div>
 	</header>
 	<nav class="navbar">
 		<ul class="navbar-list">
-			<li class="navbar-item"><a href="#" class="navbar-link">Inicio</a></li>
-			<li class="navbar-item"><a href="#" class="navbar-link">Quien Soy</a></li>
-			<li class="navbar-item"><a href="#" class="navbar-link">Skills</a></li>
-			<li class="navbar-item"><a href="#" class="navbar-link">Experiencia</a></li>
-			<li class="navbar-item"><a href="#" class="navbar-link">Contacto</a></li>
+			<li class="navbar-item active"><a href="#" class="navbar-link">Inicio</a></li>
+			<li class="navbar-item"><a href="#quien-soy" class="navbar-link">Quien Soy</a></li>
+			<li class="navbar-item" id="skill-section"><a href="#skills" class="navbar-link">Skills</a></li>
+			<li class="navbar-item"><a href="#experiencia" class="navbar-link">Experiencia</a></li>
+			<li class="navbar-item"><a href="#contact" class="navbar-link">Contacto</a></li>
 		</ul>
 	</nav>
 	<main class="container">
@@ -42,9 +42,9 @@
 				<div class="col-8">
 					<h2>Quien soy</h2>
 					<div class="linea-separadora"></div>
-					<p>Farmacéutico de profesión, he dedicado todo mi tiempo libre a mi formación autodidacta en otros campos, desde la obtención de título más alto en lengua japonesa otorgado por el centro de lenguas extranjeras de la UAH, con la nota de matrícula de honor, pasando por mi formación en programación, tocando lenguajes como python, html5, css3, javascript (angular), vex.<br><br> En  los dos últimos años, he aplicado mi conocimiento en programación en el campo de los efectos visuales, además de haber alcanzado un gran nivel en el manejo de Autodesk Maya y Houdini.
+					<p>Farmacéutico de profesión, he dedicado todo mi tiempo libre a mi formación autodidacta en otros campos, desde la obtención del título más alto en lengua japonesa, otorgado por el centro de lenguas extranjeras de la UAH, con la nota de matrícula de honor, pasando por mi formación en programación, tocando lenguajes como python, html5, css3, javascript (angular), vex.<br><br> En  los dos últimos años, he aplicado mi conocimiento en programación en el campo de los efectos visuales, además de haber alcanzado un gran nivel, en el manejo de Autodesk Maya y Houdini.
 
-					En la actualidad me encuentro cursando el Keepcoding Web Development Master Bootcamp II edición, para poder dar un salto en mis habilidades como programador, y obtener una gran base como FullStack Web Developer.</p>
+					En la actualidad, me encuentro cursando el Keepcoding Web Development Master Bootcamp II edición, para poder dar un salto en mis habilidades como programador, y obtener una gran base como FullStack Web Developer.</p>
 				</div>
 			</div>
 		</section>
@@ -74,10 +74,44 @@
 				</div>
 			</div>
 		</section>
-		<section></section>
-		<section></section>
+		<section class="section-content">
+			<h2>Contacto</h2>
+			<div class="linea-separadora"></div>
+			<form class="form" id="contact" name="contactame" method="get">
+				<div class="form-row">
+					<label for="name" class="icon"><i class="fa fa-user"></i></label>
+					<input type="text" id="name" name="name" placeholder="Escriba su nombre..." required>
+				</div>
+				<div class="form-row">
+					<label for="email" class="icon"><i class="fa fa-envelope"></i></label>
+					<input type="email" id="email" name="email" placeholder="Escriba su mail..." pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+				</div>
+				<div class="form-row">
+					<label for="phone" class="icon"><i class="fa fa-phone"></i></label>
+					<input type="tel" id="phone" name="phone" placeholder="Teléfono" pattern="[0-9]{9}" required>
+				</div>
+				<div class="form-row">
+					<label for="conocido">¿Como me encontraste?</label>
+					<select name="conocido" id="conocido" required>
+						<option value="google">Google</option>
+						<option value="facebook">Facebook</option>
+						<option value="linkedin">Linkedin</option>
+						<option value="otros">Otros</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="notas">Notas: </label>
+					<textarea name="notas" id="notas" cols="30" rows="10" placeholder="Escriba aquí, si tiene alguna observación..."></textarea>
+				</div>
+
+			</form>
+		 </section>
+		<section  class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi ea, odio possimus nam animi consectetur distinctio natus quod a praesentium libero molestias inventore placeat neque in ipsum, sunt consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, similique placeat molestias iusto, soluta ipsam et laboriosam, adipisci excepturi suscipit impedit modi veritatis. Atque, cupiditate minus iste sed perspiciatis, temporibus. </section>
+		<section  class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi ea, odio possimus nam animi consectetur distinctio natus quod a praesentium libero molestias inventore placeat neque in ipsum, sunt consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, similique placeat molestias iusto, soluta ipsam et laboriosam, adipisci excepturi suscipit impedit modi veritatis. Atque, cupiditate minus iste sed perspiciatis, temporibus. </section>
+		<section  class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa excepturi ea, odio possimus nam animi consectetur distinctio natus quod a praesentium libero molestias inventore placeat neque in ipsum, sunt consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, similique placeat molestias iusto, soluta ipsam et laboriosam, adipisci excepturi suscipit impedit modi veritatis. Atque, cupiditate minus iste sed perspiciatis, temporibus. </section>
 	</main>
 	<footer> </footer>
 </body>
+<script src="js/smoothScroll.js"></script>
 
 </html>
