@@ -438,7 +438,7 @@ textarea{
 
 }
 
-button {
+button#enviar {
 	border-radius: 8px;
 	padding: 10px;
 	color: #1d89cc;

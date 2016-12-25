@@ -29,11 +29,13 @@ body {
 }
 
 .todo-container > li {
-	padding: 12px;
 	background-color:#F8F8F8 ;
 	text-transform: uppercase;
 	color: #555555;
 	border-bottom: 1px solid #c7c7c7;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 12px;
 }
 
 .todo-container > .todo-cabecera {
@@ -51,4 +53,33 @@ body {
 
 #tarea {
 	border-radius: 0px;
+}
+
+.add-task {
+
+	padding: 10px;
+	color: #1d89cc;
+	font-size: 18px;
+	font-weight: 700;
+	border: 1px solid #007bb7;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+
+}
+
+.remove-item {
+	float: right;
+	line-height: 50px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	padding-right: 12px;
+
+}
+
+.remove-item > i{
+	font-size: 24px;
+	color: #ED5B63;
+
+
+
 }
