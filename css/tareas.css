@@ -1,0 +1,54 @@
+body {
+	background-image: linear-gradient(rgba(29, 137, 204, 0.6),rgba(29, 137, 204, 0.6) ), url(../img/tareas.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.todo-section {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.todo-section > .todo-header {
+	font-size: 40px;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+}
+
+
+.todo-container {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 500px;
+	list-style-type: none;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+}
+
+.todo-container > li {
+	padding: 12px;
+	background-color:#F8F8F8 ;
+	text-transform: uppercase;
+	color: #555555;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.todo-container > .todo-cabecera {
+	text-align: center;
+	background-color: #1d89cc;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 18px;
+
+}
+
+.add-task{
+	border-radius: 0px;
+}
+
+#tarea {
+	border-radius: 0px;
+}

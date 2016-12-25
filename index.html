@@ -31,6 +31,7 @@
 			<li class="navbar-item" id="skill-section"><a href="#skills" class="navbar-link">Skills</a></li>
 			<li class="navbar-item"><a href="#experiencia" class="navbar-link">Experiencia</a></li>
 			<li class="navbar-item"><a href="#contact" class="navbar-link">Contacto</a></li>
+			<li class="navbar-item"><a href="tareas.html" class="navbar-link">Tareas</a></li>
 		</ul>
 	</nav>
 	<main class="container">
@@ -88,7 +89,7 @@
 				</div>
 				<div class="form-row">
 					<label for="phone" class="icon"><i class="fa fa-phone"></i></label>
-					<input type="tel" id="phone" name="phone" placeholder="Teléfono" pattern="[0-9]{9}" required>
+					<input type="tel" id="phone" name="phone" placeholder="Teléfono" pattern="[0-9]{9}" title="Tiene que ser un numero de 9 dígitos" required>
 				</div>
 				<div class="form-row">
 					<label for="conocido">¿Como me encontraste?</label>
@@ -102,6 +103,9 @@
 				<div class="form-row">
 					<label for="notas">Notas: </label>
 					<textarea name="notas" id="notas" cols="30" rows="10" placeholder="Escriba aquí, si tiene alguna observación..."></textarea>
+				</div>
+				<div class="form-row">
+					<button id="enviar" type="submit">Enviar</button>
 				</div>
 
 			</form>

@@ -180,7 +180,7 @@ body {
 h2 {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	letter-spacing: 3px;
 }
 
@@ -434,7 +434,19 @@ textarea{
 	padding: 6px;
 	font-size: 16px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
-	border: solid 1px #007bb7;
+	border: 1px solid #007bb7;
+
+}
+
+button {
+	border-radius: 8px;
+	padding: 10px;
+	color: #1d89cc;
+	font-size: 18px;
+	font-weight: 700;
+	border: 1px solid #007bb7;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+
 
 }
 
