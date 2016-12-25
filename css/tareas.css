@@ -58,28 +58,27 @@ body {
 .add-task {
 
 	padding: 10px;
-	color: #1d89cc;
+	color: #1ABC9C;
 	font-size: 18px;
 	font-weight: 700;
 	border: 1px solid #007bb7;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+	cursor: pointer;
 
 }
 
 .remove-item {
 	float: right;
-	line-height: 50px;
 	border: 0;
 	background-color: transparent;
 	cursor: pointer;
-	padding-right: 12px;
-
+	margin-right: 12px;
 }
 
 .remove-item > i{
-	font-size: 24px;
+	font-size: 30px;
 	color: #ED5B63;
-
+	line-height: 50px;
 
 
 }
