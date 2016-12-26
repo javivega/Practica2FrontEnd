@@ -60,6 +60,7 @@ var cumulativeOffset = function(element){
 
 var offsetQuienSoy = cumulativeOffset(document.getElementById('quien-soy')) - 80;
 var offsetSkills = cumulativeOffset(document.getElementById('skills')) - 80;
+var offsetContacto = cumulativeOffset(document.getElementById('contact')) - 80;
 
 window.addEventListener('scroll', changeMenuStyle);
 
@@ -82,7 +83,7 @@ function changeMenuStyle(event){
 		}
 		removeActiveClass();
 		document.querySelector('a[href$="quien-soy"]').parentNode.classList.add('active');
-	} else if(window.pageYOffset >= offsetSkills){
+	} else if(window.pageYOffset >= offsetSkills && window.pageYOffset < offsetContacto){
 		if(!previous){
 			previous = 3;
 		} else if(previous == 3){
@@ -95,6 +96,14 @@ function changeMenuStyle(event){
 			if(!skillSection[i].classList.contains('animate'))
 				skillSection[i].classList.add('animate');
 			}
+	} else if(window.pageYOffset >= offsetContacto){
+		if(!previous){
+			previous = 3;
+		} else if(previous == 3){
+			return false;
+		}
+		removeActiveClass();
+		document.querySelector('a[href$="contact"]').parentNode.classList.add('active');
 	}
 }
 

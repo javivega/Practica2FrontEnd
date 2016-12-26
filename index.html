@@ -75,10 +75,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-content">
+		<section class="section-content"  id="contact" >
 			<h2>Contacto</h2>
 			<div class="linea-separadora"></div>
-			<form class="form" id="contact" name="contactame" method="get">
+			<form class="form" name="contactame" method="get" id="form-contact" novalidate>
 				<div class="form-row">
 					<label for="name" class="icon"><i class="fa fa-user"></i></label>
 					<input type="text" id="name" name="name" placeholder="Escriba su nombre..." required>
@@ -95,7 +95,7 @@
 					<label for="conocido">¿Como me encontraste?</label>
 					<select name="conocido" id="conocido" required>
 						<option value="google">Google</option>
-						<option value="facebook">Facebook</option>
+						<option value="facebook" selected>Facebook</option>
 						<option value="linkedin">Linkedin</option>
 						<option value="otros">Otros</option>
 					</select>
@@ -117,5 +117,6 @@
 	<footer> </footer>
 </body>
 <script src="js/smoothScroll.js"></script>
+<script src="js/formvalid.js"></script>
 
 </html>
