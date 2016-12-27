@@ -173,6 +173,7 @@ body {
 	width: 150px;
 	height: 2px;
 	margin: 20px auto;
+	margin-bottom: 50px;
 	background-color: #1d89cc;
 
 }
@@ -182,6 +183,13 @@ h2 {
 	text-align: center;
 	font-size: 40px;
 	letter-spacing: 3px;
+}
+
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 2px;
 }
 
 
@@ -377,7 +385,39 @@ h2 {
 	100% {width: 50%;};
 }
 
+/************************/
+/*Estudios*/
+/************************/
 
+.study-icons {
+	color: #1d89cc;
+	margin: 14px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.study-square {
+	border: 2px solid  #1d89cc;
+	border-radius: 4px;
+	width: 90%;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.study-list{
+	list-style: none;
+	font-size: 18px;
+	padding-left: 12px;
+}
+
+.study-square .study-check {
+	margin-right: 8px;
+	color: #1d89cc;
+}
+
+.study-list > .study-item {
+	padding: 10px 0;
+}
 
 /************************/
 /*Formulario*/
