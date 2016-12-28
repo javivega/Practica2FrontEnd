@@ -37,6 +37,10 @@ $(document).ready(function(){
 				drawTask();
 
 			})
+			.fail(function(error){
+				console.error("Error creando tarea. ", error);
+		})
+
 	}
 
 	var getTask = function(data){
@@ -51,6 +55,9 @@ $(document).ready(function(){
 				drawTask();
 
 		})
+			.fail(function(error){
+				console.error("Error cargando tareas.", error);
+		})
 	}
 
 	var removeTask = function(id){
@@ -64,6 +71,9 @@ $(document).ready(function(){
 				});
 				drawTask();
 		})
+			.fail(function(error){
+				console.error("Error eliminando tarea", error);
+			})
 	}
 
 

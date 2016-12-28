@@ -62,6 +62,7 @@ var offsetQuienSoy = cumulativeOffset(document.getElementById('quien-soy')) - 80
 var offsetSkills = cumulativeOffset(document.getElementById('skills')) - 80;
 var offsetContacto = cumulativeOffset(document.getElementById('contact')) - 80;
 var offsetEstudios = cumulativeOffset(document.getElementById('estudios')) - 80;
+var offsetExperiencia = cumulativeOffset(document.getElementById('experiencia')) - 80;
 
 window.addEventListener('scroll', changeMenuStyle);
 
@@ -97,7 +98,7 @@ function changeMenuStyle(event){
 		}
 		removeActiveClass();
 		document.querySelector('a[href$="skills"]').parentNode.classList.add('active');
-	} else if(window.pageYOffset >= offsetEstudios && window.pageYOffset < offsetContacto){
+	} else if(window.pageYOffset >= offsetEstudios && window.pageYOffset < offsetExperiencia){
 		if(!previous){
 			previous = 5;
 		} else if(previous == 5){
@@ -106,10 +107,19 @@ function changeMenuStyle(event){
 		removeActiveClass();
 		document.querySelector('a[href$="estudios"]').parentNode.classList.add('active');
 
-	} else if(window.pageYOffset >= offsetContacto){
+	} else if(window.pageYOffset >= offsetExperiencia && window.pageYOffset < offsetContacto){
 		if(!previous){
 			previous = 6;
 		} else if(previous == 6){
+			return false;
+		}
+		removeActiveClass();
+		document.querySelector('a[href$="experiencia"]').parentNode.classList.add('active');
+
+	} else if(window.pageYOffset >= offsetContacto){
+		if(!previous){
+			previous = 7;
+		} else if(previous == 7){
 			return false;
 		}
 		removeActiveClass();
