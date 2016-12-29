@@ -201,6 +201,15 @@ h3 {
 	border: 3px solid black;
 }
 
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
 
 /************************/
 /*skills section*/
@@ -431,11 +440,58 @@ h3 {
 }
 
 
+/************************/
+/*sobre-mi*/
+/************************/
+
+
+.interes-video {
+	border-radius: 6px;
+	border: 1px solid rgba(0,0,0,0.8);
+	box-shadow: 0 0 5px #1d89cc;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#sobre-mi p {
+
+	line-height: 1.5;
+}
 
 
 
 
+/************************/
+/*galeria*/
+/************************/
 
+.foto-galeria {
+	list-style-type: none;
+	width 100%;
+}
+
+.foto-galeria > .foto-item {
+	width: 25%;
+	display: block;
+	float: left;
+	background-color: black;
+	overflow: hidden;
+
+}
+
+.foto-galeria > .foto-item > img {
+	width: 100%;
+	height: auto;
+	opacity: 0.6;
+	transform: scale(1.15);
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.foto-galeria > .foto-item > img:hover {
+	opacity: 1;
+	transform: scale(1.03);
+}
 
 /************************/
 /*Formulario*/
