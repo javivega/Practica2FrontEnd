@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var API_URL = 'http://localhost:8000/api/';
 	var taskContainer = $('.todo-container');
 	var task = [];
+	var loader = $('.loader');
 
 
 	var drawTask = function(){
@@ -45,10 +46,14 @@ $(document).ready(function(){
 
 	var getTask = function(data){
 
+		var beforeSend = function(){
+			loader.show();
+		}
+
 		$.ajax({
 			type: 'GET',
 			url: API_URL +'task',
-			data: data
+			beforeSend: beforeSend
 		})
 			.done(function(data){
 				task = data;
@@ -57,6 +62,9 @@ $(document).ready(function(){
 		})
 			.fail(function(error){
 				console.error("Error cargando tareas.", error);
+		})
+			.always(function(){
+				 loader.hide();
 		})
 	}
 
@@ -90,7 +98,11 @@ $(document).ready(function(){
 		removeTask(id);
 	})
 
-	getTask();
+	setTimeout(function(){
+		getTask();
+	}, 500);
+
+
 
 
 })
