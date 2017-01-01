@@ -70,6 +70,7 @@ window.addEventListener('scroll', changeMenuStyle);
 function changeMenuStyle(event){
 	var previous;
 	var skillSection = document.getElementsByClassName('skill-item');
+	var studySelection = document.getElementsByClassName('study-square');
 	if(window.pageYOffset >= 0 && window.pageYOffset < offsetQuienSoy){
 		if(!previous){
 			previous = 1;
@@ -99,6 +100,14 @@ function changeMenuStyle(event){
 		}
 		removeActiveClass();
 		document.querySelector('a[href$="skills"]').parentNode.classList.add('active');
+
+		for(var i = 0; i < studySelection.length; i++){
+			if(!studySelection[i].classList.contains('animate')){
+				studySelection[i].classList.add('animate');
+			}
+
+		}
+
 	} else if(window.pageYOffset >= offsetEstudios && window.pageYOffset < offsetExperiencia){
 		if(!previous){
 			previous = 5;

@@ -553,6 +553,41 @@ h3 {
 	width: 90%;
 	height: 400px;
 	margin: 0 auto;
+	opacity: 0;
+}
+
+.study-square.animate {
+	animation: study-animate 1s ease-in;
+	opacity: 1;
+}
+@keyframes study-animate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	;
+}
+
+@-moz-keyframes study-animate  {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	;
+}
+
+@-webkit-keyframes study-animate  {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	;
 }
 
 .study-list {
