@@ -529,10 +529,7 @@ h3 {
 
 
 /************************/
-
-
 /*Estudios*/
-
 
 /************************/
 
@@ -557,6 +554,7 @@ h3 {
 }
 
 .study-square.animate {
+	-webkit-animation: study-animate 1s ease-in;
 	animation: study-animate 1s ease-in;
 	opacity: 1;
 }
